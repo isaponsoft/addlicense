@@ -1,6 +1,5 @@
 #!/bin/sh
 PRJDIR=$(dirname $0)
-LIBAMTRS_SOURCE=ssh://hg@192.168.100.30:9122/isapon.repos/libs/libamtrs
 
 if [ ! -d libamtrs ];
 then

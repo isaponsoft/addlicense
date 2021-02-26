@@ -3,7 +3,9 @@ project(addlicense)
 
 set(AMTRS_APPNAME "addlicense")
 
-set(libAmtrs_DIR ${CMAKE_CURRENT_BINARY_DIR}/libamtrs)
+if (NOT libAmtrs_DIR)
+	set(libAmtrs_DIR ${CMAKE_CURRENT_BINARY_DIR}/libamtrs)
+endif ()
 include(${libAmtrs_DIR}/template.app-console.cmake)
 
 

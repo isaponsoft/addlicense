@@ -11,9 +11,11 @@ c/c++に似たソースコードのライセンス表記を調べたり書き換
 
 
 ```shell
-addlicense LICENSE.TXT project-dir \
+addlicense \
+  --licenseLICENSE.TXT \
   --filter "*.cpp;*.hpp;*.h;*.hpp;*.java" \
-  --print-license
+  --print-licence
+  project-dir
 project-dir/main.cpp : (0,220)
 /* Copyright (c) 2019, isaponsoft (Isao Shibuya) All rights reserved. *
  * Use of this source code is governed by a BSD-style  license that   *
